@@ -42,4 +42,3 @@ replace_bert_self_attention(modified_model)
 modified_model.eval()
 modified_time, _ = benchmark_model(modified_model, tokenizer, "This is a sample input.")
 print(f"Modified Model Average Inference Time: {modified_time:.6f} seconds")
-
